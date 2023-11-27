@@ -1,0 +1,16 @@
+#board td { 
+  width:100px;
+  height:100px;
+  text-align: center;
+  position: relative;
+  border:2px;
+  border-style:solid;
+}
+#board td.tile
+{
+  cursor: pointer;
+}
+.tile-num { 
+  font-size:35px; 
+  color:white;
+}
