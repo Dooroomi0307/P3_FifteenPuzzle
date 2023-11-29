@@ -56,7 +56,7 @@
                 if (action) isEnd();
             }
 
-    //move an empty tile 
+    //move to an empty space
     function moveTo(to) {
         board[Math.floor(blank / vertical)][blank % horizontal] = board[Math.floor(to / vertical)][to % horizontal];
         board[Math.floor(to / vertical)][to % horizontal] = BLANK;
@@ -99,7 +99,9 @@
                     var img_x = -(board[y][x] % horizontal) * tile_size + 'px';
                     var img_y = -Math.floor(board[y][x] / vertical) * tile_size + 'px';
                     //**Adjust here for different background image**********************************
-                    html += '<td class="tile" data-index="' + (y * horizontal + x) + '" style="background-image: url(\'./img/400.png\'); background-position: ' + img_x + ' ' + img_y + ';"><div class="tile-num">' + board[y][x] + '</div></td>';
+                    html += '<td class="tile" data-index="' + (y * horizontal + x) + 
+                    '" style="background-image: url(\'./img/400.png\'); background-position: ' + img_x + ' ' + img_y + 
+                    ';"><div class="tile-num">' + board[y][x] + '</div></td>';
                 } else {
                     html += '<td class="blank">&nbsp;</td>';
                 }
