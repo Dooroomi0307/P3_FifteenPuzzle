@@ -14,3 +14,10 @@
   font-size:35px; 
   color:white;
 }
+
+.tile:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 5px red;
+  filter: grayscale(.5);
+
+}
