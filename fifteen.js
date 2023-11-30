@@ -116,7 +116,6 @@
         }
     }
 
-    //**Adjust here for 'End-of-game notificaiton**********************************
     function isEnd() {
         for (var y = 0; y < vertical; y++) {
             for (var x = 0; x < horizontal; x++) {
@@ -126,8 +125,11 @@
                     }
                 }
             }
-                alert('Cleared!');
+        	notification.classList.add("open-notification");
         }
 
     shuffleBtn.addEventListener('click', shuffle);
     initPuzzle();
+	function closeNotification() {
+		notification.classList.remove("open-notification");
+	}
