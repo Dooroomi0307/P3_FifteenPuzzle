@@ -1,0 +1,16 @@
+Project 3 - Fifteen Puzzle w/ Javscript
+
+Team Leader: Nyasia Pratt 
+Olivia Bae - Puzzle Algorithm & Powerpoint
+Nyasia Pratt -  Different puzzle sizes  & Powerpoint
+Royce Lim - Multiple Background & Powerpoint
+Anna Adams - End of Game notification & Powerpoint
+Aldin Karabegovic - Animations , Transitions & Powerpoint
+
+Our project is an interactive puzzle game using javascript and CSS.
+Implementing a proper fifteen puzzle algorithm with JavaScript to provide responsive and interactive game interface with extra features that enhance the user experience. 
+Key Components/Challenges:
+- Dividing a single image into 16 separated images
+- Shuffling algorithm
+- Tracking empty space
+- Detecting an empty space around clicked tile
