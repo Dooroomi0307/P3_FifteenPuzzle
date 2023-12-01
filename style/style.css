@@ -5,6 +5,42 @@
   animation-duration: 4s;
   animation-iteration-count: infinite;
 }
+.pickbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.pickbtn:hover, .pickbtn:focus {
+  background-color: #2980B9;
+}
+
+.picksize {
+  position: relative;
+  display: inline-block;
+}
+
+.picksize-content {
+  display: none;
+  position: absolute;
+  background-color:	#ffff00 ;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.picksize-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.picksize a:hover {background-color: #ccc;}
 
 @keyframes tiles{
   0%{background-color: #912619ff}
