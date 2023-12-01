@@ -1,5 +1,4 @@
 /*Tile animation */
-
 #board{
   animation-name: var(--end-game);
   animation-duration: 4s;
@@ -16,8 +15,8 @@
   60%{background-color: #F8E487ff;}
   80%{background-color: #D421A6ff;}
 }
-/*Multiple Background Img Styling*/
 
+/*Multiple Background Img Styling*/
 .menu{
 	text-align: center;
 	border: solid 3px black;
@@ -39,6 +38,7 @@ input[type=submit]{
   background-color: green;
   color: white;
 }
+
 /*Changing Board Size Styling */
 .pickbtn {
   background-color:#a6a9ab ;
@@ -87,10 +87,12 @@ input[type=submit]{
   border:2px;
   border-style:solid;
 }
+
 #board td.tile
 {
   cursor: pointer;
 }
+
 .tile-num { 
   font-size:35px; 
   color:white;
@@ -100,8 +102,8 @@ input[type=submit]{
   transform: scale(1.05);
   box-shadow: 0 0 5px red;
   filter: grayscale(.5);
-
 }
+
 /*End of Game Notification Styling */
 .notification {
 	display: none;
@@ -115,15 +117,18 @@ input[type=submit]{
 	height: 700px;
 	width: 500px;
 }
+
 .notification button {
 	cursor: pointer;
 }
+
 .open-notification{
 	display:block;
 	animation: fadeIn ease 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
+
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -134,7 +139,6 @@ input[type=submit]{
 }
 
 /*Second Notification */
-
 .notification1 {
 	display: none;
 	position: absolute;
@@ -148,6 +152,7 @@ input[type=submit]{
 	width: 500px;
 
 }
+
 .notification1 button {
 	cursor: pointer;
 }
@@ -169,7 +174,6 @@ input[type=submit]{
 }
 
 /*Button Styling */
-
 #button{
   text-align: center;
   margin-top: 25px;
@@ -200,9 +204,8 @@ input[type=submit]{
   color: wheat;
   float: left;
   position: absolute;
-  margin-left: 650px;
+  margin-left: 620px;
   margin-top:-530px;
-
 }
 
 #close:hover{
