@@ -1,3 +1,20 @@
+/*Tile animation */
+
+#board{
+  animation-name: var(--end-game);
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes tiles{
+  0%{background-color: #912619ff}
+
+  20%{background-color: #FBD910ff;}
+  40%{background-color: #402A2Bff;}
+  60%{background-color: #F8E487ff;}
+  80%{background-color: #D421A6ff;}
+}
+
 #board td { 
   width:100px;
   height:100px;
