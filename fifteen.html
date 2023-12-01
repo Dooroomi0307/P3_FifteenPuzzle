@@ -37,34 +37,6 @@
     <div id="notification1" class="notification1">
 	    <img src= "https://codd.cs.gsu.edu/~rlim6@student.gsu.edu/WP/PW/3/img/win_notif.png" alt = "Winner"> <br> 
 	</div>
-<!-- Changing Board Size -->
-	<div class="picksize">
-	<button onclick="myFunction()" class="pickbtn">Pick Board Size</button>
-		<div id="mysize" class="picksize-content">
-			<a href="#size1">4x4</a>
-			<a href="#size2">3x3</a>
-			<a href="#size3">6x6</a>
-			<a href="#size4">8x8</a>
-			<a href="#size5">10x10</a>
-		</div>
-	</div>type="button" onclick="myFunction()">Try it</button>
-<script>
-	function myFunction() {
-		document.getElementById("mysize").classList.toggle("show");
-	}
-	window.onclick = function(event) {
-		if (!event.target.matches('.pickbtn')) {
-			var picksizes = document.getElementsByClassName("picksize-content");
-			var i;
-		for (i = 0; i < picksizes.length; i++) {
-			var openpicksize = picksizes[i];
-		if (openpicksize.classList.contains('show')) {
-			openpicksize.classList.remove('show');
-				}
-			}
-		}
-	}
-</script>
 <!-- JS Source -->		
     <script src="./fifteen.js"></script>
 </body>
