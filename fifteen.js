@@ -137,7 +137,6 @@
                     var img_x = -((board[y][x] - 1) % horizontal) * tile_size + 'px';
                     var img_y = -Math.floor((board[y][x] - 1) / horizontal) * tile_size + 'px';
 
-                    //**Adjust here for different background image**********************************
                     html += '<td class="tile" data-index="' + (y * horizontal + x) + 
                     img + img_x + ' ' + img_y + 
                     ';"><div class="tile-num">' + board[y][x] + '</div></td>';
@@ -154,7 +153,7 @@
             tileElements[i].addEventListener('click', tileClick);
         }
     }
-
+//check if user completed puzzle, open end of game notification if correct
     function isEnd() {
         for (var y = 0; y < vertical; y++) {
             for (var x = 0; x < horizontal; x++) {
@@ -168,9 +167,10 @@
             notification1.classList.add("open-notification1");
             document.getElementById('board').style.setProperty('--end-game', 'tiles');
         }
-
+//shuffle bttn
     shuffleBtn.addEventListener('click', shuffle);
     initPuzzle();
+//close end of game notification
 	function closeNotification() {
 		notification.classList.remove("open-notification");
         notification1.classList.remove("open-notification1");
