@@ -127,6 +127,7 @@
                 }
             }
         	notification.classList.add("open-notification");
+            document.getElementById('board').style.setProperty('--end-game', 'tiles');
         }
 
     shuffleBtn.addEventListener('click', shuffle);
