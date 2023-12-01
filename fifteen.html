@@ -15,6 +15,41 @@
 	    <img src= "./img/win_notif.png" alt = "Winner"> <br> 
 	    <button onclick="closeNotification()"> Close </button>
 	</div>
+	 <div id="notification" class="notification">
+	    <img src= "./img/win_notif.png" alt = "Winner"> <br> 
+	    <button onclick="closeNotification()"> Close </button>
+		<div class="picksize">
+  <button onclick="myFunction()" class="pickbtn">picksize</button>
+  <div id="mysize" class="picksize-content">
+    <a href="#size1">3x3</a>
+    <a href="#size2">8x8</a>
+    <a href="#size3">6x6</a>
+	  <a href="#size4">10x10</a>
+  
+</div>
+
+<script>
+
+function myFunction() {
+  document.getElementById("mysize").classList.toggle("show");
+}
+window.onclick = function(event) {
+  if (!event.target.matches('.pickbtn')) {
+    var picksizes = document.getElementsByClassName("picksize-content");
+    var i;
+    for (i = 0; i < picksizes.length; i++) {
+      var openpicksize = picksizes[i];
+      if (openpicksize.classList.contains('show')) {
+        openpicksize.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+		
+		
+		
+		
     <script src="./fifteen.js"></script>
 </body>
 </html>
