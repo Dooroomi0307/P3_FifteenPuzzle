@@ -170,3 +170,8 @@ input[type=submit]{
   cursor: pointer;
   background-color: #01A5E1;
 }
+
+#music img{
+  height: 50px;
+  width: 50px;
+}
