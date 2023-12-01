@@ -101,25 +101,30 @@
 		
 	if(imageChooser == 1 && hasRun == false || document.getElementById('default').checked){
 		img = '" style="background-image: url(\'https://codd.cs.gsu.edu/~rlim6@student.gsu.edu/WP/PW/3/img/400.png\'); background-position: ';
+		document.getElementById('default').checked = true;
 		hasRun = true;	//ensures random images are not selected when selecting from menu
 	}
 		
 	else if(imageChooser == 2 && hasRun == false || document.getElementById('rick_morty').checked){
+		document.getElementById('rick_morty').checked = true;
 		img = '" style="background-image: url(\'https://codd.cs.gsu.edu/~rlim6@student.gsu.edu/WP/PW/3/img/test.png\'); background-position: ';
 		hasRun = true;
 	}
 		
 	else if(imageChooser == 3 && hasRun == false || document.getElementById('dog').checked){
+		document.getElementById('dog').checked = true;
 		img = '" style="background-image: url(\'https://codd.cs.gsu.edu/~rlim6@student.gsu.edu/WP/PW/3/img/dog.png\'); background-position: ';
 		hasRun = true;
 	}
 		
 	else if(imageChooser == 4 && hasRun == false || document.getElementById('lebron').checked){
+		document.getElementById('lebron').checked = true;
 		img = '" style="background-image: url(\'https://codd.cs.gsu.edu/~rlim6@student.gsu.edu/WP/PW/3/img/lebron.png\'); background-position: ';
 		hasRun = true;
 	}
 		
 	else if(imageChooser == 5 && hasRun == false || document.getElementById('link').checked){
+		document.getElementById('link').checked = true;
 		img = '" style="background-image: url(\'https://codd.cs.gsu.edu/~rlim6@student.gsu.edu/WP/PW/3/img/link.png\'); background-position: ';
 		hasRun = true;
 	}
