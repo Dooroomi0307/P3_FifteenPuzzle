@@ -37,49 +37,6 @@ input[type=submit]{
   background-color: gray;
   color: white;
 }
-
-/*Changing Board Size Styling */
-.pickbtn {
-  background-color:#a6a9ab ;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-}
-
-.pickbtn:hover, .pickbtn:focus {
-  background-color: #a6a9ab;
-}
-
-.picksize {
-  position: relative;
-  display: inline-block;
-  float: right;
-  margin-right: 850px;
-}
-
-.picksize-content {
-  display: none;
-  position: absolute;
-  background-color:	#f5fafc;
-  min-width: 160px;
-  overflow: auto;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.picksize-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.picksize a:hover {background-color: #ccc;}
-
-.show {display: block;}
-
 #board td { 
   width:100px;
   height:100px;
