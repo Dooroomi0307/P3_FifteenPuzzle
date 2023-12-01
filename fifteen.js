@@ -132,6 +132,7 @@
                 }
             }
         	notification.classList.add("open-notification");
+            notification1.classList.add("open-notification1");
             document.getElementById('board').style.setProperty('--end-game', 'tiles');
         }
 
@@ -139,4 +140,5 @@
     initPuzzle();
 	function closeNotification() {
 		notification.classList.remove("open-notification");
+        notification1.classList.remove("open-notification1");
 	}
