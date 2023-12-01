@@ -96,8 +96,9 @@
             for (var x = 0; x < horizontal; x++) {
                 if (board[y][x] != BLANK) {
                     //image size
-                    var img_x = -x * tile_size + 'px';
-                    var img_y = -y * tile_size + 'px';
+                    var img_x = -((board[y][x] - 1) % horizontal) * tile_size + 'px';
+                    var img_y = -Math.floor((board[y][x] - 1) / horizontal) * tile_size + 'px';
+
                     //**Adjust here for different background image**********************************
                     html += '<td class="tile" data-index="' + (y * horizontal + x) + 
                     '" style="background-image: url(\'./img/400.png\'); background-position: ' + img_x + ' ' + img_y + 
