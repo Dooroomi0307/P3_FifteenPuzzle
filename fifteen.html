@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
+<!-- Board Container & Shuffle Button -->
     <div class="container">
         <table id="board">
         </table>
@@ -13,6 +14,7 @@
           <button id="shuffleBtn">Shuffle</button>
         </div>
     </div>
+<!-- Menu div for Multiple Background Img -->
 	<div class="menu">
 		<p>Choose a background</p>
 		<input type="radio" id="default" name="bg_img" value="default">
@@ -27,6 +29,7 @@
 		<label for="link">Link (Legend of Zelda)</label><br><br>  		
 		<input type="submit" value="Select" onclick="updateBoard()">
 	</div>
+<!-- End of Game Notification -->
     <div id="notification" class="notification">
 	    <img src= "https://codd.cs.gsu.edu/~rlim6@student.gsu.edu/WP/PW/3/img/win_notif.png" alt = "Winner"> <br> 
         <button id="close" onclick="closeNotification()"> Close </button>
@@ -34,7 +37,7 @@
     <div id="notification1" class="notification1">
 	    <img src= "https://codd.cs.gsu.edu/~rlim6@student.gsu.edu/WP/PW/3/img/win_notif.png" alt = "Winner"> <br> 
 	</div>
-
+<!-- Changing Board Size -->
  <form>
       picksize:
   <select id="picksize">
@@ -45,8 +48,6 @@
      <option value="size5">10x10</option>
   </select>
 </form>
-
-
 
 <button type="button" onclick="myFunction()">Try it</button>
 
@@ -59,10 +60,7 @@ function myFunction() {
   }
 }
 </script>
-		
-		
-		
-		
+<!-- JS Source -->		
     <script src="./fifteen.js"></script>
 </body>
 </html>
