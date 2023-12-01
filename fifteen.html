@@ -9,15 +9,19 @@
     <div class="container">
         <table id="board">
         </table>
-        <button id="shuffleBtn">Shuffle</button>
+        <div id="button">
+          <button id="shuffleBtn">Shuffle</button>
+        </div>
     </div>
     <div id="notification" class="notification">
 	    <img src= "./img/win_notif.png" alt = "Winner"> <br> 
-	    <button onclick="closeNotification()"> Close </button>
+        <button id="close" onclick="closeNotification()"> Close </button>
 	</div>
-	 <div id="notification" class="notification">
+    <div id="notification1" class="notification1">
 	    <img src= "./img/win_notif.png" alt = "Winner"> <br> 
-	    <button onclick="closeNotification()"> Close </button>
+	</div>
+
+
 		<div class="picksize">
   <button onclick="myFunction()" class="pickbtn">picksize</button>
   <div id="mysize" class="picksize-content">
