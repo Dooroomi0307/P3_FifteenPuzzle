@@ -84,6 +84,11 @@
         }
     }
 
+//generate the function
+	function updateBoard(picksize){
+		horizontal+= pickbtn;
+	vertical+=pickbtn;}
+
     //inject <script> into html
     function updateBoard() {
         board_el.innerHTML = '';
