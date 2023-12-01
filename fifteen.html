@@ -13,6 +13,20 @@
           <button id="shuffleBtn">Shuffle</button>
         </div>
     </div>
+	<div class="menu">
+		<p>Choose a background</p>
+		<input type="radio" id="default" name="bg_img" value="default">
+		<label for="default">Default</label><br>
+		<input type="radio" id="rick_morty" name="bg_img" value="rick_morty">
+		<label for="rick_morty">Rick & Morty</label><br>  
+		<input type="radio" id="dog" name="bg_img" value="dog">
+		<label for="dog">Dog</label><br>  
+		<input type="radio" id="lebron" name="bg_img" value="lebron">
+		<label for="lebron">Lebron James</label><br>
+		<input type="radio" id="link" name="bg_img" value="link">
+		<label for="link">Link (Legend of Zelda)</label><br><br>  		
+		<input type="submit" value="Select" onclick="updateBoard()">
+	</div>
     <div id="notification" class="notification">
 	    <img src= "./img/win_notif.png" alt = "Winner"> <br> 
         <button id="close" onclick="closeNotification()"> Close </button>
