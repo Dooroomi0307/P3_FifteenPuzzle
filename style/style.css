@@ -17,6 +17,29 @@
   80%{background-color: #D421A6ff;}
 }
 
+.menu{
+	text-align: center;
+	border: solid 3px black;
+	width: 25%;
+	margin: auto;
+	padding: 5px;
+
+}
+
+.menu p{
+	font-weight: bold;
+}
+
+input[type=submit]{
+  width: 100px;
+  height: 25px;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 15px;
+  background-color: green;
+  color: white;
+}
+
 .pickbtn {
   background-color: #3498DB;
   color: white;
