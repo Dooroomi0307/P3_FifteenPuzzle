@@ -9,7 +9,6 @@
 
 @keyframes tiles{
   0%{background-color: #912619ff}
-
   20%{background-color: #FBD910ff;}
   40%{background-color: #402A2Bff;}
   60%{background-color: #F8E487ff;}
@@ -56,6 +55,8 @@ input[type=submit]{
 .picksize {
   position: relative;
   display: inline-block;
+  float: right;
+  margin-right: 850px;
 }
 
 .picksize-content {
