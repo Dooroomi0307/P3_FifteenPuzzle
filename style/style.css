@@ -41,7 +41,7 @@ input[type=submit]{
 }
 /*Changing Board Size Styling */
 .pickbtn {
-  background-color: #3498DB;
+  background-color:#a6a9ab ;
   color: white;
   padding: 16px;
   font-size: 16px;
@@ -50,7 +50,7 @@ input[type=submit]{
 }
 
 .pickbtn:hover, .pickbtn:focus {
-  background-color: #2980B9;
+  background-color: #a6a9ab;
 }
 
 .picksize {
@@ -61,7 +61,7 @@ input[type=submit]{
 .picksize-content {
   display: none;
   position: absolute;
-  background-color:	#ffff00 ;
+  background-color:	#f5fafc;
   min-width: 160px;
   overflow: auto;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
