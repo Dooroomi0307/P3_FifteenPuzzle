@@ -9,6 +9,7 @@
     var  board = []; //array for board
     var  board_el = document.getElementById('board'); 
     var  shuffleBtn = document.getElementById('shuffleBtn'); 
+    var hasRun = false;	//used to make sure the random image function only is used on page load
 
     //init array for puzzle board
     function initPuzzle() {
@@ -95,6 +96,33 @@
         var html = '';
         var image_size = 400; // image size
         var tile_size = image_size / horizontal;
+	var imageChooser = Math.floor(Math.random() * (6 - 1) + 1);	//selects random number from 1 to 5
+	var img = '';
+		
+	if(imageChooser == 1 && hasRun == false || document.getElementById('default').checked){
+		img = '" style="background-image: url(\'./img/400.png\'); background-position: ';
+		hasRun = true;	//ensures random images are not selected when selecting from menu
+	}
+		
+	else if(imageChooser == 2 && hasRun == false || document.getElementById('rick_morty').checked){
+		img = '" style="background-image: url(\'./img/test.png\'); background-position: ';
+		hasRun = true;
+	}
+		
+	else if(imageChooser == 3 && hasRun == false || document.getElementById('dog').checked){
+		img = '" style="background-image: url(\'./img/dog.png\'); background-position: ';
+		hasRun = true;
+	}
+		
+	else if(imageChooser == 4 && hasRun == false || document.getElementById('lebron').checked){
+		img = '" style="background-image: url(\'./img/lebron.png\'); background-position: ';
+		hasRun = true;
+	}
+		
+	else if(imageChooser == 5 && hasRun == false || document.getElementById('link').checked){
+		img = '" style="background-image: url(\'./img/link.png\'); background-position: ';
+		hasRun = true;
+	}
 
         for (var y = 0; y < vertical; y++) {
             html += '<tr>';
@@ -106,7 +134,7 @@
 
                     //**Adjust here for different background image**********************************
                     html += '<td class="tile" data-index="' + (y * horizontal + x) + 
-                    '" style="background-image: url(\'./img/400.png\'); background-position: ' + img_x + ' ' + img_y + 
+                    img + img_x + ' ' + img_y + 
                     ';"><div class="tile-num">' + board[y][x] + '</div></td>';
                 } else {
                     html += '<td class="blank">&nbsp;</td>';
