@@ -76,6 +76,9 @@ input[type=submit]{
 }
 
 .picksize a:hover {background-color: #ccc;}
+.show {display: block;}
+}
+
 
 
 
