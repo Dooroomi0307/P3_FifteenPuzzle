@@ -1,6 +1,5 @@
     //set initial variable
 
-    //**Adjust here for different puzzle size**********************************
     var horizontal = 4; //board horizontal length
     var vertical = 4; //board vertical length
 
