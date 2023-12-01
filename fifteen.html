@@ -35,32 +35,26 @@
 	    <img src= "https://codd.cs.gsu.edu/~rlim6@student.gsu.edu/WP/PW/3/img/win_notif.png" alt = "Winner"> <br> 
 	</div>
 
+ <form>
+      picksize:
+  <select id="picksize">
+    <option value="size1">4x4</option>
+    <option value="size2">3x3</option>
+    <option value="size3">8x8</option>
+    <option value="size4">6x6</option>
+     <option value="size5">10x10</option>
+  </select>
+</form>
 
-		<div class="picksize">
-  <button onclick="myFunction()" class="pickbtn">picksize</button>
-  <div id="mysize" class="picksize-content">
-    <a href="#size1">4x4</a>
-    <a href="#size2">3x3</a>
-    <a href="#size3">8x8</a>
-    <a href="#size4">6x6</a>
-	  <a href="#size5">10x10</a>
-  
-</div>
+
+
+<button type="button" onclick="myFunction()">Try it</button>
 
 <script>
-
 function myFunction() {
-  document.getElementById("mysize").classList.toggle("show");
+  document.getElementById("picksize").value = "";
 }
-window.onclick = function(event) {
-  if (!event.target.matches('.pickbtn')) {
-    var picksizes = document.getElementsByClassName("picksize-content");
-    var i;
-    for (i = 0; i < picksizes.length; i++) {
-      var openpicksize = picksizes[i];
-      if (openpicksize.classList.contains('show')) {
-        openpicksize.classList.remove('show');
-      }
+</script>
     }
   }
 }
