@@ -1,7 +1,5 @@
 /*Tile animation */
-body{
-  background-color: lightgray;
-}
+
 
 #board{
   animation-name: var(--end-game);
