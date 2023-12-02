@@ -60,7 +60,7 @@ input[type=submit]{
   border-radius: 5px;
   font-size: 15px;
   background-color: gray;
-  color: white;
+  color: wheat;
 }
 input:hover[type=submit]{
 background-color: #009879;
