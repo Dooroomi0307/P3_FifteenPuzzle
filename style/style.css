@@ -1,10 +1,37 @@
 /*Tile animation */
+body{
+  background-color: lightgray;
+}
+
 #board{
   animation-name: var(--end-game);
   animation-duration: 4s;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 2;
   margin: auto;
-  margin-top: 250px;
+}
+#board td { 
+  width:100px;
+  height:100px;
+  text-align: center;
+  position: relative;
+  border:2px;
+  border-style:solid;
+}
+
+#board td.tile
+{
+  cursor: pointer;
+}
+
+.tile-num { 
+  font-size:35px; 
+  color:white;
+}
+
+.tile:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 5px red;
+  filter: grayscale(.5);
 }
 
 @keyframes tiles{
@@ -37,30 +64,13 @@ input[type=submit]{
   background-color: gray;
   color: white;
 }
-#board td { 
-  width:100px;
-  height:100px;
-  text-align: center;
-  position: relative;
-  border:2px;
-  border-style:solid;
+input:hover[type=submit]{
+background-color: #009879;
+cursor: pointer;
 }
 
-#board td.tile
-{
-  cursor: pointer;
-}
 
-.tile-num { 
-  font-size:35px; 
-  color:white;
-}
 
-.tile:hover{
-  transform: scale(1.05);
-  box-shadow: 0 0 5px red;
-  filter: grayscale(.5);
-}
 
 /*End of Game Notification Styling */
 .notification {
@@ -101,7 +111,7 @@ input[type=submit]{
 	display: none;
 	position: absolute;
 	top: 8px;
-	margin-left: 73%;
+	margin-left: 72.5%;
 	text-align: center;
 }
 
@@ -158,17 +168,34 @@ input[type=submit]{
   text-align: center;
   border-radius: 5px;
   font-size: 20px;
-  background-color: #e1ad01;
-  color: wheat;
+  background-color: gray;
+  color:wheat;
   float: left;
   position: absolute;
-  margin-left: 620px;
-  margin-top:-530px;
+  margin-left: 630px;
+  margin-top: 50px;
 }
 
 #close:hover{
   cursor: pointer;
   background-color: #01A5E1;
+}
+
+/* Music styling */
+
+#music{
+  float: right;
+  margin-right: 6%;
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+}
+
+#music p{
+  font-size: 19px;
+  color: #5f5f5f;
+  font-weight: 380;
+  margin-right: 15px;
 }
 
 #music img{
